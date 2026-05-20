@@ -51,25 +51,33 @@ Clone the repository:
 ```bash
 git clone https://github.com/KillianSupinski/ft_irc.git
 cd ft_irc
+```
 
 Compile the project:
+```bash
 make
+```
+Or:
+```bash
 make debug
-
+```
 ## Usage
 
 Run the server with a port and a password:
 ./ircserv <port> <password>
+```bash
 ./ircserv 6667 mypassword
+```
 Then connect with an IRC client:
+```bash
 nc -c localhost 6667
+```
 
 ## Example Commands
-
+```bash
 PASS mypassword
 NICK killian
 USER killian 0 * :Killian Supinski
 JOIN #general
 PRIVMSG #general :Hello everyone!
-
-
+```
